@@ -69,7 +69,7 @@ Version: 1.0.0
     }
 
     .logo-wordmark {
-        font-size: clamp(2.45rem, 9vw, 2.95rem);
+        font-size: clamp(1.5rem, 6.2vw, 2rem);
         line-height: 1;
         height: auto;
     }
