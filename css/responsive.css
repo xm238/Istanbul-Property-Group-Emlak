@@ -148,10 +148,7 @@ Version: 1.0.0
     }
 
     .hero-form--floating {
-        position: relative;
-        top: auto;
-        right: auto;
-        transform: none;
+        display: none;
     }
 
     .slide-content .container {
@@ -182,16 +179,7 @@ Version: 1.0.0
     }
 
     .hero-form {
-        position: relative;
-        margin: 0 auto;
-        max-width: min(94vw, 560px);
-        width: min(94vw, 560px);
-        transform: none;
-        top: auto;
-        left: auto;
-        right: auto;
-        padding: 22px 16px;
-        border-radius: 18px;
+        display: none;
     }
 
     .search-form {
