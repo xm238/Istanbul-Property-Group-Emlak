@@ -1,0 +1,24 @@
+<!-- Premium Property Placeholder - property-9.jpg -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a252f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad)" filter="url(#shadow)"/>
+  <rect x="40" y="40" width="720" height="520" fill="white" opacity="0.95" rx="8" ry="8"/>
+  <rect x="60" y="60" width="680" height="200" fill="#f8f9fa" rx="4" ry="4"/>
+  <rect x="60" y="280" width="680" height="260" fill="white" rx="4" ry="4"/>
+  <circle cx="120" cy="160" r="40" fill="#C9A84C" opacity="0.8"/>
+  <text x="180" y="165" font-family="Cormorant Garamond" font-size="24" fill="#333" font-weight="600">Property Image</text>
+  <text x="60" y="320" font-family="Jost" font-size="18" fill="#666">Premium property with modern amenities</text>
+  <text x="60" y="350" font-family="Jost" font-size="16" fill="#888">Spacious interiors • High-end finishes • Prime location</text>
+  <rect x="60" y="400" width="200" height="40" fill="#C9A84C" rx="4" ry="4"/>
+  <text x="160" y="425" font-family="Jost" font-size="14" fill="white" text-anchor="middle">View Details</text>
+  <rect x="540" y="400" width="200" height="40" fill="#e9ecef" rx="4" ry="4"/>
+  <text x="640" y="425" font-family="Jost" font-size="14" fill="#333" text-anchor="middle">Contact Agent</text>
+</svg>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Estates - Premium Real Estate</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Luxury Estates offers premium real estate services with exclusive property listings, expert agents, and personalized solutions for your dream home.">
+    <meta name="keywords" content="real estate, luxury homes, property listings, real estate agents, home buying, home selling">
+    <meta name="author" content="Luxury Estates">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Scroll-reveal is handled locally (IntersectionObserver) -->
+    
+    <!-- Preload Critical Images -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Luxury Estates",
+        "description": "Premium real estate services with exclusive property listings",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Luxury Avenue",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "12345"
+        },
+        "telephone": "+1-555-123-4567",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "url": "https://luxuryestates.com"
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#home">
+                        <span class="logo-wordmark" aria-label="Luxury Estates">
+                            <span class="logo-wordmark__word">Luxury</span>
+                            <span class="logo-wordmark__word">Estates</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#properties" class="nav-link">Properties</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#team" class="nav-link">Team</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact Info -->
+                <div class="header-contact" aria-label="Header contact">
+                    <a class="contact-item contact-item--phone" href="tel:+15551234567" aria-label="Call +1 (555) 123-4567">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </a>
+                    <a class="contact-item contact-item--email" href="mailto:info@luxuryestates.com" aria-label="Email info@luxuryestates.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@luxuryestates.com</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-slider" id="hero-slider">
+                <!-- Slide 1 -->
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920')">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-text" data-aos="fade-right">
+                                <h1 class="hero-title">Find Your <span class="highlight">Dream</span> Home</h1>
+                                <p class="hero-subtitle">Discover luxury properties that match your lifestyle and exceed your expectations</p>
+                                <div class="hero-buttons">
+                                    <a href="#properties" class="btn btn-primary">Explore Properties</a>
+                                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920')">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-text" data-aos="fade-right">
+                                <h1 class="hero-title">Premium <span class="highlight">Investments</span></h1>
+                                <p class="hero-subtitle">Smart real estate investments for long-term growth and financial security</p>
+                                <div class="hero-buttons">
+                                    <a href="#services" class="btn btn-primary">Our Services</a>
+                                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920')">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-text" data-aos="fade-right">
+                                <h1 class="hero-title">Expert <span class="highlight">Guidance</span></h1>
+                                <p class="hero-subtitle">Trusted advisors with decades of experience in luxury real estate</p>
+                                <div class="hero-buttons">
+                                    <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                                    <a href="#contact" class="btn btn-secondary">Schedule Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+
+            <!-- Fixed hero search card (prevents crossfade overlap) -->
+            <div class="hero-form hero-form--floating" data-aos="fade-left">
+                <h3>Quick Search</h3>
+                <form class="search-form" id="quick-search-form">
+                    <div class="form-group">
+                        <select id="property-type" name="property-type">
+                            <option value="">Property Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="condo">Condo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="location" name="location">
+                            <option value="">Location</option>
+                            <option value="downtown">Downtown</option>
+                            <option value="suburbs">Suburbs</option>
+                            <option value="beach">Beach</option>
+                            <option value="mountain">Mountain</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="min-price" name="min-price" placeholder="Min Price ($)">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="max-price" name="max-price" placeholder="Max Price ($)">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="slider-nav">
+                <button class="nav-btn prev-btn" id="slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" id="slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Slider Indicators -->
+            <div class="slider-indicators" id="slider-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up">
+                        <div class="stat-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="500">0</h3>
+                            <p class="stat-label">Properties Sold</p>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="200">0</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p class="stat-label">Awards Won</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <h2 class="section-title">About <span class="highlight">Luxury Estates</span></h2>
+                        <h3 class="section-subtitle">Your Trusted Real Estate Partner</h3>
+                        <p class="about-description">
+                            Since 2008, Luxury Estates has been redefining the real estate experience. 
+                            We combine cutting-edge technology with personalized service to help 
+                            clients buy, sell, and invest in premium properties worldwide.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert market knowledge</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized service</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Global network</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Transparent process</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="about-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Luxury property showcase">
+                        <div class="about-stat-badge">
+                            <span class="about-stat-badge__label">Est.</span>
+                            <span class="about-stat-badge__value">2008</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Section -->
+        <section class="properties-section" id="properties">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Featured <span class="highlight">Properties</span></h2>
+                    <p class="section-description">Discover our handpicked selection of luxury properties</p>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filter-section" data-aos="fade-up">
+                    <div class="filter-container">
+                        <div class="filter-group">
+                            <label for="property-filter">Property Type:</label>
+                            <select id="property-filter">
+                                <option value="all">All Properties</option>
+                                <option value="house">Houses</option>
+                                <option value="apartment">Apartments</option>
+                                <option value="villa">Villas</option>
+                                <option value="condo">Condos</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="price-filter">Price Range:</label>
+                            <select id="price-filter">
+                                <option value="all">All Prices</option>
+                                <option value="under-500k">Under $500K</option>
+                                <option value="500k-1m">$500K - $1M</option>
+                                <option value="1m-2m">$1M - $2M</option>
+                                <option value="over-2m">Over $2M</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="beds-filter">Bedrooms:</label>
+                            <select id="beds-filter">
+                                <option value="all">All</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sort-filter">Sort By:</label>
+                            <select id="sort-filter">
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="beds">Bedrooms</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-meta">
+                        <button type="button" class="filter-reset" id="reset-filters" hidden>Reset Filters</button>
+                    </div>
+                </div>
+
+                <!-- Properties Grid -->
+                <div class="properties-grid" id="properties-grid" data-aos="fade-up">
+                    <!-- Property Cards will be dynamically generated -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more" data-aos="fade-up">
+                    <button id="load-more-btn" class="btn btn-secondary">Load More Properties</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+                    <p class="section-description">Comprehensive real estate solutions tailored to your needs</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3 class="service-title">Property Sales</h3>
+                        <p class="service-description">
+                            Expert guidance through every step of the selling process, from valuation to closing.
+                        </p>
+                        <ul class="service-features">
+                            <li>Professional property valuation</li>
+                            <li>Marketing and staging services</li>
+                            <li>Negotiation expertise</li>
+                            <li>Closing coordination</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="service-title">Property Search</h3>
+                        <p class="service-description">
+                            Personalized property search based on your specific criteria and preferences.
+                        </p>
+                        <ul class="service-features">
+                            <li>Custom property matching</li>
+                            <li>Private showings</li>
+                            <li>Market analysis</li>
+                            <li>Offer strategy</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">Investment Consulting</h3>
+                        <p class="service-description">
+                            Strategic investment advice for building and growing your real estate portfolio.
+                        </p>
+                        <ul class="service-features">
+                            <li>Market research and analysis</li>
+                            <li>Investment strategy development</li>
+                            <li>Risk assessment</li>
+                            <li>Portfolio management</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="service-title">Property Management</h3>
+                        <p class="service-description">
+                            Comprehensive property management services to maximize your investment returns.
+                        </p>
+                        <ul class="service-features">
+                            <li>Tenant screening and placement</li>
+                            <li>Rent collection and accounting</li>
+                            <li>Maintenance coordination</li>
+                            <li>Legal compliance</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Meet Our <span class="highlight">Team</span></h2>
+                    <p class="section-description">Dedicated professionals committed to your real estate success</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Sarah Johnson">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sarah Johnson</h3>
+                            <p class="member-title">Senior Agent</p>
+                            <p class="member-bio">10+ years of experience in luxury home sales. Specialized in waterfront properties.</p>
+                        </div>
+                        <div class="member-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Michael Chen">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Michael Chen</h3>
+                            <p class="member-title">Investment Specialist</p>
+                            <p class="member-bio">Commercial real estate expert with a focus on multi-family investments.</p>
+                        </div>
+                        <div class="member-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400" alt="Emily Rodriguez">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Emily Rodriguez</h3>
+                            <p class="member-title">Property Manager</p>
+                            <p class="member-bio">Oversees our property management division with attention to detail.</p>
+                        </div>
+                        <div class="member-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400" alt="David Thompson">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">David Thompson</h3>
+                            <p class="member-title">Market Analyst</p>
+                            <p class="member-bio">Provides market insights and investment analysis for our clients.</p>
+                        </div>
+                        <div class="member-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+                    <p class="section-description">Hear what our satisfied clients have to say</p>
+                </div>
+
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <p>Working with Luxury Estates was an absolute pleasure. They found us our dream home in just three weeks and handled every detail perfectly.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Client">
+                                </div>
+                                <div class="author-info">
+                                    <h4>John & Sarah Wilson</h4>
+                                    <p>First-time home buyers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <p>Their investment advice helped me build a diversified real estate portfolio that has exceeded my expectations. Highly recommended!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Client">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Robert Chen</h4>
+                                    <p>Real Estate Investor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <p>The property management services are outstanding. My rental properties have never been better maintained or more profitable.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" alt="Client">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maria Garcia</h4>
+                                    <p>Property Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Navigation -->
+                    <div class="testimonial-nav">
+                        <button class="nav-btn prev-btn" id="testimonial-prev" aria-label="Previous testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn next-btn" id="testimonial-next" aria-label="Next testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content" data-aos="fade-up">
+                    <div class="newsletter-text">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest property listings and market insights.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                    <p class="section-description">Contact us today to start your real estate journey</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Luxury Avenue, Suite 500<br>City, State 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@luxuryestates.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-container">
+                    <div id="contact-map" data-aos="fade-up">
+                        <iframe
+                            title="Luxury Estates location"
+                            src="https://www.google.com/maps?q=123%20Luxury%20Avenue%2C%20Suite%20500&output=embed"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up">
+                    <h3 class="footer-logo">Luxury Estates</h3>
+                    <p class="footer-description">
+                        Your trusted partner in luxury real estate. We provide exceptional service and expertise to help you achieve your property goals.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Property Sales</a></li>
+                        <li><a href="#">Property Search</a></li>
+                        <li><a href="#">Investment Consulting</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Suite 500</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@luxuryestates.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-copyright">
+                        <p>&copy; <span id="footer-year">2026</span> Luxury Estates. All rights reserved.</p>
+                        <div class="footer-legal">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Property Modal -->
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Property details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
