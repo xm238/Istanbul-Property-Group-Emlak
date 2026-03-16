@@ -6,10 +6,10 @@ Main Stylesheet
 /* CSS Custom Properties (Variables) */
 :root {
     /* Brand system */
-    --color-primary: #0f1e2e;      /* Near-black navy for text */
-    --color-secondary: #1e3a5f;    /* Dark navy for surfaces */
-    --color-accent: #C9A84C;       /* Gold for highlights/CTAs */
-    --color-accent-hover: #a8893d; /* Gold hover */
+    --color-primary: #0d2a45;      /* Bosphorus deep blue for headings */
+    --color-secondary: #155e75;    /* Teal-blue for surfaces and links */
+    --color-accent: #d4a144;       /* Warm gold for highlights/CTAs */
+    --color-accent-hover: #b68431; /* Gold hover */
     --color-white: #ffffff;
     --color-off-white: #f8f6f2;   /* Warm off-white section bg */
     --color-text-muted: #6b7280;
@@ -22,7 +22,7 @@ Main Stylesheet
     --text-light: var(--color-text-muted);
     --text-white: var(--color-white);
     --bg-color: var(--color-white);
-    --bg-dark: #0a121a;
+    --bg-dark: #081726;
     --bg-light: var(--color-off-white);
     --border-color: rgba(15, 30, 46, 0.12);
     --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);

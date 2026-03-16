@@ -1,7 +1,7 @@
 /**
- * Luxury Estates - Premium Real Estate Website
- * Main JavaScript File
- * Author: Luxury Estates Team
+ * Istanbul Property Group Emlak - Web Sitesi
+ * Ana JavaScript Dosyası
+ * Author: Istanbul Property Group Emlak
  * Version: 1.0.0
  */
 
@@ -42,186 +42,186 @@ let isLoading = false;
 const propertiesData = [
     {
         id: 1,
-        title: 'Luxury Beachfront Villa',
-        location: 'Malibu, CA',
-        price: 2500000,
+        title: 'Bebek Boğaz Manzaralı Villa',
+        location: 'Bebek, İstanbul',
+        price: 28500000,
         beds: 5,
         baths: 6,
         sqft: 4500,
         type: 'villa',
         image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800',
         featured: true,
-        description: 'Stunning beachfront property with panoramic ocean views and private beach access.',
-        features: ['Ocean View', 'Private Beach', 'Infinity Pool', 'Smart Home'],
-        agent: 'Sarah Johnson',
-        contact: '+1 (555) 123-4567'
+        description: 'Geniş bahçe, özel havuz ve etkileyici Boğaz manzarasıyla seçkin bir yaşam alanı.',
+        features: ['Boğaz Manzarası', 'Özel Havuz', 'Akıllı Ev', 'Kapalı Otopark'],
+        agent: 'Seda Yılmaz',
+        contact: '0534 567 39 90'
     },
     {
         id: 2,
-        title: 'Modern Downtown Apartment',
-        location: 'New York, NY',
-        price: 850000,
+        title: 'Etiler Modern Daire',
+        location: 'Etiler, İstanbul',
+        price: 9750000,
         beds: 2,
         baths: 2,
         sqft: 1200,
         type: 'apartment',
         image: 'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800',
         featured: true,
-        description: 'Contemporary apartment in the heart of the city with skyline views.',
-        features: ['City View', 'Gym', 'Rooftop', '24/7 Security'],
-        agent: 'Michael Chen',
-        contact: '+1 (555) 234-5678'
+        description: 'Merkezi konum, yüksek tavan ve ferah planıyla şehir yaşamına uygun modern daire.',
+        features: ['Şehir Manzarası', 'Site Spor Salonu', 'Teras', '7/24 Güvenlik'],
+        agent: 'Mert Kaya',
+        contact: '0534 567 39 90'
     },
     {
         id: 3,
-        title: 'Spacious Family Home',
-        location: 'Beverly Hills, CA',
-        price: 1800000,
+        title: 'Levent Aile Dairesi',
+        location: 'Levent, İstanbul',
+        price: 14250000,
         beds: 4,
         baths: 5,
         sqft: 3800,
         type: 'house',
         image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
         featured: false,
-        description: 'Perfect family home with large backyard and modern amenities.',
-        features: ['Backyard', 'Garage', 'Fireplace', 'Garden'],
-        agent: 'Emily Rodriguez',
-        contact: '+1 (555) 345-6789'
+        description: 'Geniş salonu ve kullanışlı planı ile aile yaşamına uygun konforlu daire.',
+        features: ['Geniş Balkon', 'Otopark', 'Ebeveyn Banyosu', 'Depolama Alanı'],
+        agent: 'Elif Demir',
+        contact: '0534 567 39 90'
     },
     {
         id: 4,
-        title: 'Penthouse Suite',
-        location: 'Chicago, IL',
-        price: 1200000,
+        title: 'Nisbetiye Cad. Penthouse',
+        location: 'Beşiktaş, İstanbul',
+        price: 19800000,
         beds: 3,
         baths: 3,
         sqft: 2800,
         type: 'condo',
         image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800',
         featured: true,
-        description: 'Elegant penthouse with city views and luxury finishes.',
-        features: ['City View', 'Balcony', 'Doorman', 'Gym'],
-        agent: 'David Thompson',
-        contact: '+1 (555) 456-7890'
+        description: 'Panoramik şehir manzaralı, yüksek standartta iç mimariye sahip çatı dubleksi.',
+        features: ['Şehir Manzarası', 'Geniş Teras', 'Vale Hizmeti', 'Fitness'],
+        agent: 'Barış Aydın',
+        contact: '0534 567 39 90'
     },
     {
         id: 5,
-        title: 'Mountain Retreat',
-        location: 'Aspen, CO',
-        price: 3200000,
+        title: 'Zekeriyaköy Müstakil Villa',
+        location: 'Sarıyer, İstanbul',
+        price: 36500000,
         beds: 6,
         baths: 7,
         sqft: 5200,
         type: 'villa',
         image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800',
         featured: false,
-        description: 'Luxurious mountain retreat with ski-in/ski-out access.',
-        features: ['Ski Access', 'Hot Tub', 'Fireplace', 'Views'],
-        agent: 'Sarah Johnson',
-        contact: '+1 (555) 567-8901'
+        description: 'Sessiz lokasyonda, geniş peyzaj alanına sahip lüks müstakil villa.',
+        features: ['Özel Bahçe', 'Jakuzi', 'Şömine', 'Geniş Otopark'],
+        agent: 'Seda Yılmaz',
+        contact: '0534 567 39 90'
     },
     {
         id: 6,
-        title: 'Urban Loft',
-        location: 'Los Angeles, CA',
-        price: 650000,
+        title: 'Beşiktaş Loft Daire',
+        location: 'Beşiktaş Merkez, İstanbul',
+        price: 7250000,
         beds: 1,
         baths: 1,
         sqft: 900,
         type: 'apartment',
         image: 'https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800',
         featured: false,
-        description: 'Chic urban loft in trendy neighborhood with exposed brick.',
-        features: ['Exposed Brick', 'High Ceilings', 'Balcony', 'Parking'],
-        agent: 'Michael Chen',
-        contact: '+1 (555) 678-9012'
+        description: 'Yüksek tavanlı, modern tasarımlı ve merkezi ulaşıma yakın loft daire.',
+        features: ['Yüksek Tavan', 'Açık Mutfak', 'Balkon', 'Kapalı Otopark'],
+        agent: 'Mert Kaya',
+        contact: '0534 567 39 90'
     },
     {
         id: 7,
-        title: 'Suburban Family Home',
-        location: 'Austin, TX',
-        price: 450000,
+        title: 'Ortaköy Aile Dairesi',
+        location: 'Ortaköy, İstanbul',
+        price: 8900000,
         beds: 4,
         baths: 3,
         sqft: 2800,
         type: 'house',
         image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
         featured: false,
-        description: 'Beautiful family home in quiet neighborhood with large yard.',
-        features: ['Backyard', 'Garage', 'Patio', 'School District'],
-        agent: 'Emily Rodriguez',
-        contact: '+1 (555) 789-0123'
+        description: 'Aile yaşamına uygun plan, açık cephe ve sakin sokak konum avantajı sunar.',
+        features: ['Aydınlık Cephe', 'Otopark', 'Teras', 'Okullara Yakın'],
+        agent: 'Elif Demir',
+        contact: '0534 567 39 90'
     },
     {
         id: 8,
-        title: 'Waterfront Condo',
-        location: 'Miami, FL',
-        price: 950000,
+        title: 'Kuruçeşme Rezidans Dairesi',
+        location: 'Kuruçeşme, İstanbul',
+        price: 16500000,
         beds: 2,
         baths: 2,
         sqft: 1500,
         type: 'condo',
         image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
         featured: true,
-        description: 'Luxury waterfront condo with private dock and pool access.',
-        features: ['Waterfront', 'Dock', 'Pool', 'Gym'],
-        agent: 'David Thompson',
-        contact: '+1 (555) 890-1234'
+        description: 'Boğaz hattında, güvenlikli site içinde premium donanımlı rezidans dairesi.',
+        features: ['Boğaz Hattı', 'Açık Havuz', 'Spor Salonu', 'Vale'],
+        agent: 'Barış Aydın',
+        contact: '0534 567 39 90'
     },
     {
         id: 9,
-        title: 'Historic Brownstone',
-        location: 'Boston, MA',
-        price: 1100000,
+        title: 'Arnavutköy Tarihi Daire',
+        location: 'Arnavutköy, İstanbul',
+        price: 11800000,
         beds: 3,
         baths: 4,
         sqft: 3200,
         type: 'house',
         image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800',
         featured: false,
-        description: 'Beautifully restored historic brownstone with modern amenities.',
-        features: ['Historic', 'Fireplace', 'Garden', 'Parking'],
-        agent: 'Sarah Johnson',
-        contact: '+1 (555) 901-2345'
+        description: 'Tarihi dokuya sahip, modern şekilde yenilenmiş geniş kullanım alanlı daire.',
+        features: ['Tarihi Mimari', 'Şömine', 'Bahçe Kullanımı', 'Otopark'],
+        agent: 'Seda Yılmaz',
+        contact: '0534 567 39 90'
     },
     {
         id: 10,
-        title: 'Modern Studio',
-        location: 'San Francisco, CA',
-        price: 750000,
+        title: 'Etiler Stüdyo Daire',
+        location: 'Etiler, İstanbul',
+        price: 6450000,
         beds: 1,
         baths: 1,
         sqft: 650,
         type: 'apartment',
         image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800',
         featured: false,
-        description: 'Modern studio apartment with city views and building amenities.',
-        features: ['City View', 'Gym', 'Rooftop', 'Parking'],
-        agent: 'Michael Chen',
-        contact: '+1 (555) 012-3456'
+        description: 'Yatırıma uygun, merkezi lokasyonda kompakt ve fonksiyonel stüdyo daire.',
+        features: ['Şehir Manzarası', 'Güvenlik', 'Ortak Teras', 'Otopark'],
+        agent: 'Mert Kaya',
+        contact: '0534 567 39 90'
     }
 ];
 
 const testimonialsData = [
     {
         id: 1,
-        quote: "Working with Luxury Estates was an absolute pleasure. They found us our dream home in just three weeks and handled every detail perfectly.",
-        author: "John & Sarah Wilson",
-        role: "First-time home buyers",
+        quote: "Kiralık ev arıyordum, bir arkadaş tavsiyesiyle geldim. İhtiyacıma uygun daireleri çok hızlı sundular ve bütçeme uygun şekilde kiralama yaptım.",
+        author: "FitBeyins",
+        role: "Kiralama işlemi",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
     },
     {
         id: 2,
-        quote: "Their investment advice helped me build a diversified real estate portfolio that has exceeded my expectations. Highly recommended!",
-        author: "Robert Chen",
-        role: "Real Estate Investor",
+        quote: "Aile olarak çok memnun kaldık, güvenilir bir ekip. Tercih ettiğimiz için çok mutluyuz, teşekkür ederiz.",
+        author: "Cahide Demir",
+        role: "Aile danışmanlığı",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
     },
     {
         id: 3,
-        quote: "The property management services are outstanding. My rental properties have never been better maintained or more profitable.",
-        author: "Maria Garcia",
-        role: "Property Owner",
+        quote: "Alım veya kiralama işlemlerinizde gönül rahatlığıyla tercih edebilirsiniz. Ben oldukça memnun kaldım.",
+        author: "Laubali",
+        role: "Alım / kiralama işlemi",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
     }
 ];
@@ -622,7 +622,7 @@ function initForms() {
             
             if (!isValid) {
                 e.preventDefault();
-                showMessage('Please fill in all required fields.', 'error');
+                showMessage('Lütfen zorunlu alanların tamamını doldurun.', 'error');
             }
         });
         
@@ -813,7 +813,7 @@ function createPropertyCard(property) {
         <div class="property-image" aria-label="${property.title}">
             <div class="property-image-bg" style="background-image: url('${property.image}')"></div>
             <div class="property-badge ${property.featured ? 'is-featured' : 'is-available'}">
-                ${property.featured ? 'Featured' : 'Available'}
+                ${property.featured ? 'Öne Çıkan' : 'Uygun'}
             </div>
         </div>
         <div class="property-content">
@@ -822,25 +822,25 @@ function createPropertyCard(property) {
                 <i class="fas fa-map-marker-alt"></i>
                 <span>${property.location}</span>
             </div>
-            <div class="property-price">$${property.price.toLocaleString()}</div>
+            <div class="property-price">${property.price.toLocaleString('tr-TR')} ₺</div>
             <div class="property-divider"></div>
-            <div class="property-metrics" aria-label="Property details">
+            <div class="property-metrics" aria-label="İlan detayları">
                 <div class="metric">
                     <i class="fas fa-bed"></i>
-                    <span>${property.beds} Beds</span>
+                    <span>${property.beds} Oda</span>
                 </div>
                 <div class="metric">
                     <i class="fas fa-bath"></i>
-                    <span>${property.baths} Baths</span>
+                    <span>${property.baths} Banyo</span>
                 </div>
                 <div class="metric">
                     <i class="fas fa-ruler-combined"></i>
-                    <span>${property.sqft.toLocaleString()} sqft</span>
+                    <span>${property.sqft.toLocaleString('tr-TR')} ft²</span>
                 </div>
             </div>
             <div class="property-actions">
-                <button class="btn btn-outline view-property-btn" data-id="${property.id}">View Details</button>
-                <button class="btn btn-secondary contact-agent-btn" data-id="${property.id}">Contact</button>
+                <button class="btn btn-outline view-property-btn" data-id="${property.id}">Detayları Gör</button>
+                <button class="btn btn-secondary contact-agent-btn" data-id="${property.id}">İletişime Geç</button>
             </div>
         </div>
     `;
@@ -870,13 +870,13 @@ function applyFilters() {
         filteredProperties = filteredProperties.filter(p => {
             switch(priceFilter) {
                 case 'under-500k':
-                    return p.price < 500000;
+                    return p.price < 10000000;
                 case '500k-1m':
-                    return p.price >= 500000 && p.price <= 1000000;
+                    return p.price >= 10000000 && p.price <= 20000000;
                 case '1m-2m':
-                    return p.price > 1000000 && p.price <= 2000000;
+                    return p.price > 20000000 && p.price <= 30000000;
                 case 'over-2m':
-                    return p.price > 2000000;
+                    return p.price > 30000000;
                 default:
                     return true;
             }
@@ -928,7 +928,7 @@ function loadMoreProperties() {
     if (isLoading) return;
     
     isLoading = true;
-    loadMoreBtn.textContent = 'Loading...';
+    loadMoreBtn.textContent = 'Yükleniyor...';
     
     setTimeout(() => {
         propertiesLoaded += 3;
@@ -940,7 +940,7 @@ function loadMoreProperties() {
         }
         
         isLoading = false;
-        loadMoreBtn.textContent = 'Load More Properties';
+        loadMoreBtn.textContent = 'Daha Fazla İlan Yükle';
     }, 1000);
 }
 
@@ -961,13 +961,13 @@ function getVisibleProperties() {
         filteredProperties = filteredProperties.filter(p => {
             switch(priceFilter) {
                 case 'under-500k':
-                    return p.price < 500000;
+                    return p.price < 10000000;
                 case '500k-1m':
-                    return p.price >= 500000 && p.price <= 1000000;
+                    return p.price >= 10000000 && p.price <= 20000000;
                 case '1m-2m':
-                    return p.price > 1000000 && p.price <= 2000000;
+                    return p.price > 20000000 && p.price <= 30000000;
                 case 'over-2m':
-                    return p.price > 2000000;
+                    return p.price > 30000000;
                 default:
                     return true;
             }
@@ -1011,40 +1011,40 @@ function openPropertyModal(property) {
                         <i class="fas fa-map-marker-alt"></i>
                         <span>${property.location}</span>
                     </div>
-                    <div class="property-modal-price">$${property.price.toLocaleString()}</div>
+                    <div class="property-modal-price">${property.price.toLocaleString('tr-TR')} ₺</div>
                 </div>
                 <div class="property-modal-features">
                     <div class="feature-grid">
                         <div class="feature-item">
                             <i class="fas fa-bed"></i>
-                            <span>${property.beds} Bedrooms</span>
+                            <span>${property.beds} Oda</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-bath"></i>
-                            <span>${property.baths} Bathrooms</span>
+                            <span>${property.baths} Banyo</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-ruler-combined"></i>
-                            <span>${property.sqft.toLocaleString()} sqft</span>
+                            <span>${property.sqft.toLocaleString('tr-TR')} ft²</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-car"></i>
-                            <span>2 Car Garage</span>
+                            <span>2 Araçlık Otopark</span>
                         </div>
                     </div>
                 </div>
                 <div class="property-modal-description">
-                    <h3>Property Description</h3>
+                    <h3>İlan Açıklaması</h3>
                     <p>${property.description}</p>
                 </div>
                 <div class="property-modal-features-list">
-                    <h3>Features</h3>
+                    <h3>Özellikler</h3>
                     <ul>
                         ${property.features.map(feature => `<li><i class="fas fa-check"></i> ${feature}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="property-modal-agent">
-                    <h3>Contact Agent</h3>
+                    <h3>Danışman İletişim</h3>
                     <div class="agent-info">
                         <div class="agent-name">${property.agent}</div>
                         <div class="agent-contact">
@@ -1054,8 +1054,8 @@ function openPropertyModal(property) {
                     </div>
                 </div>
                 <div class="property-modal-actions">
-                    <button class="btn btn-primary schedule-tour-btn" data-id="${property.id}">Schedule Tour</button>
-                    <button class="btn btn-secondary download-brochure-btn" data-id="${property.id}">Download Brochure</button>
+                    <button class="btn btn-primary schedule-tour-btn" data-id="${property.id}">Randevu Oluştur</button>
+                    <button class="btn btn-secondary download-brochure-btn" data-id="${property.id}">Broşür İndir</button>
                 </div>
             </div>
         </div>
@@ -1109,12 +1109,12 @@ function handleNewsletterSubmit(e) {
     const email = document.getElementById('newsletter-email').value;
     
     if (!email) {
-        showMessage('Please enter your email address.', 'error');
+        showMessage('Lütfen e-posta adresinizi girin.', 'error');
         return;
     }
     
     // Simulate API call
-    showMessage('Thank you for subscribing to our newsletter!', 'success');
+    showMessage('Bültene başarıyla abone oldunuz.', 'success');
     e.target.reset();
 }
 
@@ -1125,36 +1125,36 @@ function handleContactSubmit(e) {
     const contactData = {
         name: formData.get('name'),
         email: formData.get('email'),
-        subject: formData.get('subject') || 'General Inquiry',
+        subject: formData.get('subject') || 'Genel Bilgi Talebi',
         message: formData.get('message')
     };
     
     if (!contactData.name || !contactData.email || !contactData.message) {
-        showMessage('Please fill in all required fields.', 'error');
+        showMessage('Lütfen zorunlu alanların tamamını doldurun.', 'error');
         return;
     }
     
     // Simulate API call
-    showMessage('Thank you for your message. We will get back to you soon!', 'success');
+    showMessage('Mesajınız için teşekkürler. En kısa sürede size dönüş yapacağız.', 'success');
     e.target.reset();
 }
 
 // Utility Functions
 function contactAgent(property) {
-    const message = `I'm interested in ${property.title} in ${property.location}. Please contact me.`;
-    const mailto = `mailto:info@luxuryestates.com?subject=Interest in ${property.title}&body=${encodeURIComponent(message)}`;
+    const message = `${property.location} bölgesindeki ${property.title} ilanınızla ilgileniyorum. Benimle iletişime geçebilir misiniz?`;
+    const mailto = `mailto:info@istanbulpropertygroup.com?subject=İlan Hakkında Bilgi: ${property.title}&body=${encodeURIComponent(message)}`;
     window.location.href = mailto;
 }
 
 function scheduleTour(property) {
-    const message = `I would like to schedule a tour for ${property.title} in ${property.location}.`;
-    const mailto = `mailto:info@luxuryestates.com?subject=Tour Request: ${property.title}&body=${encodeURIComponent(message)}`;
+    const message = `${property.location} bölgesindeki ${property.title} için yerinde randevu oluşturmak istiyorum.`;
+    const mailto = `mailto:info@istanbulpropertygroup.com?subject=Randevu Talebi: ${property.title}&body=${encodeURIComponent(message)}`;
     window.location.href = mailto;
 }
 
 function downloadBrochure(property) {
     // Simulate brochure download
-    showMessage(`Downloading brochure for ${property.title}...`, 'success');
+    showMessage(`${property.title} için broşür indiriliyor...`, 'success');
     
     // Create a fake download
     setTimeout(() => {
